@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./utils/visually-hidden";
+
+@import "./base/common";
+@import "./base/container";
+
+@import "./components/social-links";
+@import "./components/logo-header";
+@import "./components/tittle";
+@import "./components/logo-footer";
+@import "./components/backdrop";
+
+@import "./layout/header";
+@import "./layout/hero";
+@import "./layout/specifics";
+@import "./layout/description";
+@import "./layout/employees";
+@import "./layout/clients";
+@import "./layout/footer";
+@import "./layout/portfolio-projects";

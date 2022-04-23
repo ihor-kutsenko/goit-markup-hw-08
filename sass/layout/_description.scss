@@ -1,0 +1,42 @@
+.description {
+  padding-top: 0;
+}
+
+.description__tittle {
+  margin-bottom: 50px;
+}
+
+.description__overlay {
+  position: relative;
+}
+.description__img-wrapper {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+
+  width: 100%;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+}
+
+.description__tittle-img {
+  color: var(--logo-footer-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.description__list {
+  display: flex;
+  margin-left: -30px;
+}
+
+.description__item {
+  margin-left: 30px;
+  flex-basis: calc((100% - 90px) / 3);
+}
