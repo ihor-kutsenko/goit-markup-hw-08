@@ -26,7 +26,41 @@
     width: 768px;
   }
 }
+// .container {
+//   width: 1200px;
+//   padding-left: 15px;
+//   padding-right: 15px;
+//   margin-left: auto;
+//   margin-right: auto;
+// }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+// mobile 480+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+// tablet 768+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+// destcop 1200+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 // destcop 1200+
 @media screen and (min-width: 1200px) {
   .container {
