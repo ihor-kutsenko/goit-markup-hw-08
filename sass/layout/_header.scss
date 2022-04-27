@@ -8,6 +8,25 @@
   position: relative;
   border-bottom: 1px solid #ececec;
 }
+@media screen and (max-width: 1199px) {
+  .page-header {
+    padding-top: 21px;
+    padding-bottom: 21px;
+  }
+  .main-contact {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-contact__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  .main-contact__link {
+    justify-content: start;
+  }
+}
+
+// mobile 420+
+
 @media screen and (max-width: 767px) {
   .nav-list {
     display: none;
@@ -21,110 +40,107 @@
   }
 }
 
+// tablet 768+
 @media screen and (min-width: 768px) {
-  .nav-list {
-    display: block;
-  }
-
-  .main-contact {
-    display: block;
-  }
   .mobile-menu__btn {
     display: none;
   }
   .mobile-menu {
     display: none;
   }
+
+  .navigation {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list {
+    display: flex;
+    align-items: center;
+  }
+  .nav-list__item:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  .nav-list__link {
+    position: relative;
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: var(--primary-text-color);
+  }
+
+  .current {
+    color: var(--accent-color);
+
+    &::after {
+      content: "";
+      width: 100%;
+      height: 4px;
+      background-color: var(--accent-color);
+      border-radius: 2px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+    }
+  }
+  .main-contact {
+    margin-left: auto;
+  }
+
+  .main-contact__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+    color: var(--secondary-text-color);
+  }
+  .main-contact__icon-link {
+    fill: currentColor;
+    margin-right: 8px;
+  }
 }
 
-// .header-container {
-//   display: flex;
-//   align-items: center;
-// }
+// destcop 1200+
 
-// .page-header {
-//   border-bottom: 1px solid #ececec;
-// }
+@media screen and (min-width: 1200px) {
+  .nav-list__link {
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// .navigation {
-//   display: flex;
-//   align-items: center;
-// }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+  .main-contact {
+    display: flex;
+    align-items: center;
+  }
+  .main-contact__item:not(:last-child) {
+    margin-right: 30px;
+  }
+  .main-contact__item {
+    justify-content: center;
+    align-items: center;
+  }
+  .main-contact__icon-link {
+    margin-right: 10px;
+  }
+  .main-contact__link {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--secondary-text-color);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-// .nav-list {
-//   display: flex;
-//   align-items: center;
-// }
-
-// .nav-list__item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
-// .main-contact {
-//   display: flex;
-//   align-items: center;
-//   margin-left: auto;
-// }
-
-// .main-contact__item:not(:last-child) {
-//   margin-right: 50px;
-// }
-
-// .nav-list__link {
-//   position: relative;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   color: var(--primary-text-color);
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
-
-// .current {
-//   color: var(--accent-color);
-
-//   &::after {
-//     content: "";
-//     width: 100%;
-//     height: 4px;
-//     background-color: var(--accent-color);
-//     border-radius: 2px;
-//     position: absolute;
-//     bottom: 0;
-//     left: 0;
-//   }
-// }
-
-// .main-contact__icon-link {
-//   fill: currentColor;
-//   margin-right: 10px;
-// }
-
-// .main-contact__item {
-//   justify-content: center;
-//   align-items: center;
-// }
-// .main-contact__link {
-//   display: flex;
-//   align-items: center;
-//   padding-top: 32px;
-//   padding-bottom: 32px;
-//   font-weight: 500;
-//   font-size: 14px;
-//   line-height: 1.14;
-//   letter-spacing: 0.02em;
-//   color: var(--secondary-text-color);
-//   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-//   &:hover,
-//   &:focus {
-//     color: var(--accent-color);
-//   }
-// }
+    &:hover,
+    &:focus {
+      color: var(--accent-color);
+    }
+  }
+}
