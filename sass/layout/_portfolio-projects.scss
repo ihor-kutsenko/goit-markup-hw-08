@@ -139,14 +139,9 @@
     margin-top: 30px;
     width: calc((100% - 60px) / 2);
   }
-
-  // .projects-name {
-  //   display: flex;
-  //   flex-direction: column;
-  // }
-  // .projects-text {
-  //   flex-grow: 1;
-  // }
+  .projects-name {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {
