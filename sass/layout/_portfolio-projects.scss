@@ -136,11 +136,10 @@
     margin-top: 30px;
     width: calc((100% - 60px) / 2);
   }
-  // костиль для вирівнювання рамок
 
-  // .projects-name {
-  //   white-space: nowrap;
-  // }
+  .projects-name {
+    white-space: nowrap;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -225,12 +225,19 @@
           <ul class="description__list list">
             <li class="description__item">
               <div class="description__overlay">
-                <img
-                  src="./images/description/box1.jpg"
-                  alt="человек печатает на ноутбуке"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/description/box1.jpg    1x,
+                      ./images/description/box1@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/description/box1.jpg"
+                    alt="человек печатает на ноутбуке"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="description__img-wrapper">
                   <h3 class="description__tittle-img">Десктопные приложения</h3>
                 </div>
@@ -238,12 +245,19 @@
             </li>
             <li class="description__item">
               <div class="description__overlay">
-                <img
-                  src="./images/description/box2.jpg"
-                  alt="человек держит телефон в руках"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/description/box2.jpg    1x,
+                      ./images/description/box2@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/description/box2.jpg"
+                    alt="человек держит телефон в руках"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="description__img-wrapper">
                   <h3 class="description__tittle-img">Мобильные приложения</h3>
                 </div>
@@ -251,12 +265,19 @@
             </li>
             <li class="description__item">
               <div class="description__overlay">
-                <img
-                  src="./images/description/box3.jpg"
-                  alt="человек держит планшет в руках"
-                  width="370"
-                  height="294"
-                />
+                <picture>
+                  <source
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/description/box3.jpg    1x,
+                      ./images/description/box3@2x.jpg 2x
+                    " />
+                  <img
+                    src="./images/description/box3.jpg"
+                    alt="человек держит планшет в руках"
+                    width="370"
+                    height="294"
+                /></picture>
                 <div class="description__img-wrapper">
                   <h3 class="description__tittle-img">Дизайнерские решения</h3>
                 </div>
@@ -275,13 +296,32 @@
           <h2 class="employees__tittle tittle">Наша команда</h2>
           <ul class="employees__list list">
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/employees/user1.jpg"
-                alt="дизайнер Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/employees/user1-destcop.jpg    1x,
+                    ./images/employees/user1-destcop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/employees/user1-tablet.jpg    1x,
+                    ./images/employees/user1-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/employees/user1-mobile.jpg    1x,
+                    ./images/employees/user1-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/employees/user1-mobile.jpg"
+                  alt="дизайнер Игорь Демьяненко"
+                  width="100%"
+                  height="auto"
+              /></picture>
 
               <div class="employees__wrapper">
                 <h3 class="employees__name">Игорь Демьяненко</h3>
@@ -316,13 +356,32 @@
             </li>
 
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/employees/user2.jpg"
-                alt="разработчик Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/employees/user2-destcop.jpg    1x,
+                    ./images/employees/user2-destcop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/employees/user2-tablet.jpg    1x,
+                    ./images/employees/user2-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/employees/user2-mobile.jpg    1x,
+                    ./images/employees/user2-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/employees/user2-mobile.jpg"
+                  alt="разработчик Ольга Репина"
+                  width="100%"
+                  height="auto"
+              /></picture>
 
               <div class="employees__wrapper">
                 <h3 class="employees__name">Ольга Репина</h3>
@@ -357,13 +416,32 @@
             </li>
 
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/employees/user3.jpg"
-                alt="маркетолог Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/employees/user3-destcop.jpg    1x,
+                    ./images/employees/user3-destcop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/employees/user3-tablet.jpg    1x,
+                    ./images/employees/user3-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/employees/user3-mobile.jpg    1x,
+                    ./images/employees/user3-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/employees/user3-mobile.jpg"
+                  alt="маркетолог Николай Тарасов"
+                  width="100%"
+                  height="auto"
+              /></picture>
 
               <div class="employees__wrapper">
                 <h3 class="employees__name">Николай Тарасов</h3>
@@ -398,13 +476,32 @@
             </li>
 
             <li class="employees__card">
-              <img
-                class="employees__photo"
-                src="./images/employees/user4.jpg"
-                alt="дизайнер Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  media="(min-width: 1200px)"
+                  srcset="
+                    ./images/employees/user4-destcop.jpg    1x,
+                    ./images/employees/user4-destcop@2x.jpg 2x
+                  " />
+                <source
+                  media="(min-width: 768px)"
+                  srcset="
+                    ./images/employees/user4-tablet.jpg    1x,
+                    ./images/employees/user4-tablet@2x.jpg 2x
+                  " />
+                <source
+                  media="(max-width: 767px)"
+                  srcset="
+                    ./images/employees/user4-mobile.jpg    1x,
+                    ./images/employees/user4-mobile@2x.jpg 2x
+                  " />
+                <img
+                  class="employees__photo"
+                  src="./images/employees/user4-mobile.jpg"
+                  alt="дизайнер Михаил Ермаков"
+                  width="100"
+                  height="auto"
+              /></picture>
 
               <div class="employees__wrapper">
                 <h3 class="employees__name">Михаил Ермаков</h3>
