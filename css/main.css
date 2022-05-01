@@ -1320,9 +1320,6 @@ img {
     margin-top: 30px;
     width: calc((100% - 60px) / 2);
   }
-  .projects-name {
-    white-space: nowrap;
-  }
 }
 
 @media screen and (min-width: 1200px) {
