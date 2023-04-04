@@ -1,4 +1,4 @@
-.social-links-list {
+.social-links__list {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6,7 +6,7 @@
   // padding-left: auto;
 }
 
-.social-links-item:not(:last-child) {
+.social-links__item:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -27,17 +27,17 @@
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.social-links-icon {
+.social-links__icon {
   width: 20px;
   height: 20px;
 }
 
-.light-theme-icon {
+.icon_light_theme {
   fill: var(--icon-fill-color);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.dark-theme-icon {
+.icon_dark_theme {
   fill: var(--logo-footer-text-color);
 }
 
@@ -51,8 +51,8 @@
     }
   }
 
-  .social-links:hover .social-links-icon,
-  .social-links:focus .social-links-icon {
+  .social-links:hover .social-links__icon,
+  .social-links:focus .social-links__icon {
     fill: var(--logo-footer-text-color);
   }
 }

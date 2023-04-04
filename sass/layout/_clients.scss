@@ -1,21 +1,21 @@
-.tittle-clients {
+.title__clients {
   margin-bottom: 30px;
 }
 
-.clients-list {
+.clients__list {
   display: flex;
   flex-wrap: wrap;
   margin-top: -30px;
   margin-left: -30px;
 }
 
-.clients-item {
+.clients__item {
   margin-top: 30px;
   margin-left: 30px;
   width: calc((100% - 2 * 30px) / 2);
 }
 
-.clients-links {
+.clients__links {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -34,29 +34,29 @@
   }
 }
 
-.clients-icon {
+.clients__icon {
   width: 106px;
   height: 60px;
 }
 
 @media screen and (min-width: 768px) {
-  .clients-item {
+  .clients__item {
     width: calc((100% - 3 * 30px) / 3);
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .tittle-clients {
+  .title-clients {
     margin-bottom: 50px;
   }
 
-  .clients-list {
+  .clients__list {
     justify-content: space-between;
     margin-top: 0;
     margin-left: 0;
   }
 
-  .clients-item {
+  .clients__item {
     width: calc((100% - 6 * 30px) / 6);
     margin-top: 0;
     margin-left: 0;
